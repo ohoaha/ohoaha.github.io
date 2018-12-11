@@ -43,13 +43,15 @@ td, th {
 .left {
   width: 30%;
   float: left;
+  padding-right: 3.5%;
+  border-right: 5px dotted aquamarine;
 }
 
 .right {
   width: 62%;
   float: right;
-  padding-left: 3.5%;
-  border-left: 5px dotted aquamarine;
+  /* padding-left: 3.5%;
+  border-left: 5px dotted aquamarine; */
 }
 
 .sec2 .left, .sec2 .right {
