@@ -1,0 +1,97 @@
+*, html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+*::selection {
+  background: aquamarine;
+}
+
+.main {
+  width: 90%;
+  /* background-color: grey; */
+  margin: 0 auto;
+  margin-top: 15rem;
+}
+
+header {
+  top: 0;
+  background-color: aquamarine;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  font-size: 6rem;
+  font-family: 'Codystar', cursive;
+  line-height: 14rem;
+  font-weight: bold;
+}
+
+table {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+td, th {
+  vertical-align: top;
+  padding: 1rem;
+  min-width: 15rem;
+}
+
+.left {
+  width: 30%;
+  float: left;
+}
+
+.right {
+  width: 62%;
+  float: right;
+  padding-left: 3.5%;
+  border-left: 5px dotted aquamarine;
+}
+
+.sec2 .left, .sec2 .right {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.sec2 {
+  clear: both;
+  /* margin-top: 2.5rem; */
+}
+
+p {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills, .langs {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.bar {
+  width: 100%;
+  background-color:#F652A0;
+  height: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-family: 'Codystar', cursive;
+  font-weight: bold;
+}
+
+a, a:visited {
+  color: #F652A0;
+  text-decoration: none;
+}
