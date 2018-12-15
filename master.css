@@ -231,10 +231,6 @@ footer p {
   border: 4px solid #f1b300;
 }
 
-.movie {
-  font-style: italic;
-}
-
 hr {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -305,8 +301,85 @@ img {
 .lists h4{
   font-weight: lighter;
 }
+
 p,li,ul,blockquote {
   text-align: justify;
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
+
+/* https://www.w3schools.com/css/css_tooltip.asp */
+/* start tooltip styling */
+.movie {
+  position: relative;
+  font-style: italic;
+  border-bottom: 1px dotted white;
+}
+
+.movie .minfo {
+  visibility: hidden;
+  z-index: 10;
+  width: 30rem;
+  position: absolute;
+  text-align: left;
+  color: black;
+  background-color: white;
+  font-style: normal;
+  font-size: 1rem;
+  /* top: 120%; */
+  left: 40%;
+  margin-left: -15rem; /* has to be half of width to keep the arrow centered */
+}
+
+.tooltipup {
+  bottom: 120%;
+}
+
+.tooltipdown {
+  top: 120%;
+}
+
+.movie .details {
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 18rem;
+  float: right;
+  display: block;
+}
+
+.movie img {
+  width: 10rem;
+  display: block;
+  max-width: 15rem;
+  margin: 0;
+  float:left;
+}
+
+.movie:hover .minfo {
+  visibility: visible;
+}
+
+.movie .tooltipdown::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 60%;
+  margin-left: -0.25rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.movie .tooltipup::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  margin-left: -0.25rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: white transparent transparent;
+}
+
+/* end tooltip styling */
