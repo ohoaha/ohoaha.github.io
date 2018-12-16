@@ -23,7 +23,7 @@ $( document ).ready(function() {
     var year = film[film.length-1].slice(1,5); //getting the year for the url
     var title = film.slice(0, film.length-1).join("+"); //getting the title for the url
     console.log(title);
-    var url = "http://www.omdbapi.com/?t="+title+"&y="+year+"&apikey=f5edb3bf";
+    var url = "https://www.omdbapi.com/?t="+title+"&y="+year+"&apikey=f5edb3bf";
     var client = new XMLHttpRequest();
     client.open("GET", url, true);
     var thiselem = $(this);
@@ -54,4 +54,4 @@ $( document ).ready(function() {
 });
 
 //sample link to see JSON response
-//http://www.omdbapi.com/?t=psycho&y=1960&apikey=f5edb3bf
+//https://www.omdbapi.com/?t=psycho&y=1960&apikey=f5edb3bf
