@@ -402,4 +402,9 @@ p,li,ul,blockquote {
   border-color: transparent transparent transparent white;
 }
 
+.content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 /* end tooltip styling */
