@@ -1,6 +1,6 @@
 html {
-  background-color: #2D2926;
-  color: white;
+  background-color: #a67274;
+  color: black;
 }
 
 body {
@@ -12,10 +12,10 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
-  color: #F6E07C;
+  color: #fce373;
   text-transform: lowercase;
 }
 
@@ -25,12 +25,12 @@ h4, h5, h6 {
 
 h5{
   font-size: 1.6rem;
-  color: #80E0A7;
+  color: #9cd08e;
   font-weight: lighter;
 }
 h6{
   font-size: 1.6rem;
-  color: #F6E07C;
+  color: #fce373;
   font-weight: lighter;
 }
 
@@ -48,23 +48,25 @@ p,li,ul {
   line-height: 2.5rem;
 }
 
-.mainLogo {
+/* .mainLogo {
   margin: 0;
   font-size: 11rem;
   letter-spacing: 2rem;
   line-height: 11rem;
-}
+} */
 
 .mainSubtitle {
-  color: #BB3D43;
-  font-size: 2rem;
-  margin-block-start: 0;
-  margin-block-end: 2em;
+  color: #a385bd;
+  font-size: 2.3rem;
+  margin-block-start: -2.3rem;
+  font-weight: bold;
+  margin-block-end: 0;
 }
 
 .module {
-  color: #F6E07C;
+  color: #fce373;
   font-size: 1.6rem;
+  font-weight: bold;
   margin-bottom: 5%;
   margin-top: 5%;
 }
@@ -96,7 +98,7 @@ p,li,ul {
   text-decoration: none;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
-  color: white;
+  color: black;
   /* display: inline; */
 }
 
@@ -105,7 +107,7 @@ p,li,ul {
 }
 
 .mainMenu::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 
 .dropdown-btn {
@@ -142,25 +144,27 @@ display: none;
 }
 
 .abtn:hover, .topbmod a:hover{
-  color: #F6E07C;
+  color: #fce373;
 }
 
 .tbtn:hover, .techHead {
-  color: #80E0A7;
+  color: #9cd08e;
 }
 
 .gbtn:hover, .genreHead{
-  color: #BB3D43;
+  color: #a385bd;
 }
 
 .hbtn:hover, .histHead {
-  color: #F1B300;
+  color: #25a2a6;
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-left: 25%;
-  color: #BB3D43;
+  color: #25a2a6;
+  font-weight: bold;
+
 }
 
 .topbmod {
@@ -178,7 +182,7 @@ footer p {
 }
 
 .topbmod a{
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -188,7 +192,7 @@ footer p {
   text-decoration: none;
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
-  color: white;
+  color: black;
   border: none;
   margin-top: 2.5%;
   position: relative;
@@ -212,23 +216,27 @@ footer p {
 }
 
 #techniques img:hover {
-  border: 4px solid #80E0A7;
+  border: 4px solid #9cd08e;
 }
 
 #genres .alabel {
-  background-color: rgba(187, 61, 67, 0.5);
+  background-color: #a385bd7d;
 }
 
 #genres img:hover {
-  border: 4px solid #BB3D43;
+  border: 4px solid #a385bd;
 }
 
 #history .alabel {
-  background-color: rgba(241, 179, 0, 0.5);
+  background-color: #25a2a675;
 }
 
 #history img:hover {
-  border: 4px solid #f1b300;
+  border: 4px solid #25a2a6;
+}
+
+.movie {
+  font-style: italic;
 }
 
 hr {
@@ -257,6 +265,10 @@ h1 {
   font-size: 3rem;
   letter-spacing: 1rem;
   line-height: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  color: #fce373;
+  text-transform: lowercase;
 }
 
 h2 {
@@ -264,6 +276,10 @@ h2 {
   font-size: 6.5rem;
   letter-spacing: 0.5rem;
   line-height: 7.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  color: #fce373;
+  text-transform: lowercase;
 }
 
 img {
@@ -284,23 +300,24 @@ img {
 .lists a:link{
     background-color: transparent;
     text-decoration: none;
-    color: #80E0A7;
+    color: #9cd08e;
     font-weight: bold;
 }
 .lists a:visited {
     background-color: transparent;
     text-decoration: none;
-    color: #80E0A7;
+    color: #9cd08e;
 }
 
 .lists a:active {
     background-color: transparent;
     text-decoration: underline;
-    color: #80E0A7;
+    color: #9cd08e;
   }
 .lists h4{
   font-weight: lighter;
 }
+
 
 p,li,ul,blockquote {
   text-align: justify;
@@ -325,6 +342,7 @@ p,li,ul,blockquote {
   background-color: white;
   font-style: normal;
   font-size: 1rem;
+  width: 30rem;
   /* top: 120%; */
 }
 
@@ -351,29 +369,29 @@ p,li,ul,blockquote {
 
 .tooltipup {
   bottom: 120%;
-  width: 30rem;
-  left: 40%;
+  left: 50%;
+  /* right: -50%; */
   margin-left: -15rem; /* has to be half of width to keep the arrow centered */
 }
 
 .tooltipdown {
   top: 120%;
-  width: 30rem;
-  left: 40%;
+  left: 50%;
+  /* right: -50%; */
   margin-left: -15rem;
 }
 
-.tooltipleft {
-  width: 30rem;
-  top: -160%;
-  right: 1rem;
-}
+/* .tooltipleft {
+  top: -160%; */
+  /* right: 1rem; */
+  /* right: 110%;
+} */
 
 .movie .tooltipdown::after {
   content: " ";
   position: absolute;
   bottom: 100%;
-  left: 60%;
+  left: 50%;
   margin-left: -0.25rem;
   border-width: 0.5rem;
   border-style: solid;
@@ -384,7 +402,7 @@ p,li,ul,blockquote {
   content: " ";
   position: absolute;
   top: 100%;
-  left: 60%;
+  left: 50%;
   margin-left: -0.25rem;
   border-width: 0.5rem;
   border-style: solid;
@@ -403,8 +421,74 @@ p,li,ul,blockquote {
 }
 
 .content {
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+
+.main {
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 /* end tooltip styling */
+
+/* glitch css */
+
+*{
+	box-sizing: border-box;
+}
+
+header.header{
+	position: relative;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+  margin-top: 50px;
+}
+.glitch-window{
+	position: absolute;
+	top: 0;
+	left: -2px;
+	width: 100%;
+	color: #222222;
+	text-shadow: 5px 0 #a385bd, -5px 0 #9cd08e, -5px 0 black;
+	overflow: hidden;
+	animation: crt-me 2500ms infinite linear alternate-reverse;
+}
+
+@keyframes crt-me {
+	 0% {
+        clip: rect(31px, 9999px, 94px, 0)
+    }
+    10% {
+        clip: rect(112px, 9999px, 76px, 0)
+    }
+    20% {
+        clip: rect(85px, 9999px, 77px, 0)
+    }
+    30% {
+        clip: rect(27px, 9999px, 97px, 0)
+    }
+    40% {
+        clip: rect(64px, 9999px, 98px, 0)
+    }
+    50% {
+        clip: rect(61px, 9999px, 85px, 0)
+    }
+    60% {
+        clip: rect(99px, 9999px, 114px, 0)
+    }
+    70% {
+        clip: rect(34px, 9999px, 115px, 0)
+    }
+    80% {
+        clip: rect(98px, 9999px, 129px, 0)
+    }
+    90% {
+        clip: rect(43px, 9999px, 96px, 0)
+    }
+    100% {
+        clip: rect(82px, 9999px, 64px, 0)
+    }
+}

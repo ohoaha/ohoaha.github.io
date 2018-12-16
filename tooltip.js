@@ -4,29 +4,25 @@ $( document ).ready(function() {
 
     var top = this.getBoundingClientRect().top;
     var right = this.getBoundingClientRect().right;
-    console.log(right);
-    console.log($(window).width());
+    var left = this.getBoundingClientRect().left;
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
-
-    if ((windowWidth - right) < 100) {
-      $(this).find("span.minfo").addClass("tooltipleft");
-    }
-    else
     if (top < windowHeight/2) { // the title is in the top half
       $(this).find("span.minfo").addClass("tooltipdown");
+      console.log($(this).find(".tooltipdown").css("left"));
     }
     else { // the title is in the bottom half
       $(this).find("span.minfo").addClass("tooltipup");
+      console.log($(this).find(".tooltipup").css("left"));
     }
 
     var film = $(this).contents().filter(function() {
       return this.nodeType == 3;
     })[0].nodeValue;
-
     film = film.split(" ");
     var year = film[film.length-1].slice(1,5); //getting the year for the url
     var title = film.slice(0, film.length-1).join("+"); //getting the title for the url
+    console.log(title);
     var url = "http://www.omdbapi.com/?t="+title+"&y="+year+"&apikey=f5edb3bf";
     var client = new XMLHttpRequest();
     client.open("GET", url, true);
@@ -44,12 +40,14 @@ $( document ).ready(function() {
       // x += "<span style='font-size:0.5rem; line-height: normal'>" + response['Plot'] + "</span>";
       thiselem.find(".minfo").find(".details").html(x);
       thiselem.find(".minfo").find(".poster").attr("src", response["Poster"]);
+      console.log(response['imdbID']);
       };
     };
     client.send();
   });
 
   $("span.movie").on("mouseout", function() {
+
       $(this).find("span.minfo").removeClass("tooltipup");
       $(this).find("span.minfo").removeClass("tooltipdown");
   });
