@@ -9,10 +9,11 @@ $( document ).ready(function() {
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
 
-    if ((windowWidth - right) < 40) {
+    if ((windowWidth - right) < 100) {
       $(this).find("span.minfo").addClass("tooltipleft");
     }
-    else if (top < windowHeight/2) { // the title is in the top half
+    else
+    if (top < windowHeight/2) { // the title is in the top half
       $(this).find("span.minfo").addClass("tooltipdown");
     }
     else { // the title is in the bottom half
