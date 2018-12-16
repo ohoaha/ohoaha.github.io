@@ -7,14 +7,18 @@ $( document ).ready(function() {
     console.log(right);
     console.log($(window).width());
     var windowHeight = $(window).height();
-    if (top < windowHeight/2) { // the title is in the top half
+    var windowWidth = $(window).width();
+
+    if ((windowWidth - right) < 40) {
+      $(this).find("span.minfo").addClass("tooltipleft");
+    }
+    else if (top < windowHeight/2) { // the title is in the top half
       $(this).find("span.minfo").addClass("tooltipdown");
     }
     else { // the title is in the bottom half
       $(this).find("span.minfo").addClass("tooltipup");
     }
 
-    // var film = $(this).text();
     var film = $(this).contents().filter(function() {
       return this.nodeType == 3;
     })[0].nodeValue;
@@ -30,7 +34,7 @@ $( document ).ready(function() {
       if(client.readyState == 4) {
       var response = JSON.parse(client.responseText);
       var x = "<strong>" + response['Title'] + " (" + response['Year'] + ")</strong><br>";
-      //INLINE STYLING USED HERE
+      //INLINE STYLING USED HERE FOR THE TEXT CONTENT OF THE TOOLTIP
       x += "<span style='font-size:0.75rem; line-height: normal'>" + response['Rated'] + " | " + response['Runtime'] + " | " + response['Genre'] + "<br>";
       x += "Director: " + response['Director'] + "<br>";
       x += "Actors: " + response['Actors'] + "<br>";
