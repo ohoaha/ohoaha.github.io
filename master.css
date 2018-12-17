@@ -325,7 +325,6 @@ p,li,ul,blockquote {
   line-height: 2.5rem;
 }
 
-/* https://www.w3schools.com/css/css_tooltip.asp */
 /* start tooltip styling */
 .movie {
   position: relative;
@@ -343,7 +342,6 @@ p,li,ul,blockquote {
   font-style: normal;
   font-size: 1rem;
   width: 30rem;
-  /* top: 120%; */
 }
 
 .movie .details {
@@ -369,29 +367,21 @@ p,li,ul,blockquote {
 
 .tooltipup {
   bottom: 120%;
-  left: 50%;
-  /* right: -50%; */
+  right: 0%;
   margin-left: -15rem; /* has to be half of width to keep the arrow centered */
 }
 
 .tooltipdown {
   top: 120%;
-  left: 50%;
-  /* right: -50%; */
+  right: 0%;
   margin-left: -15rem;
 }
-
-/* .tooltipleft {
-  top: -160%; */
-  /* right: 1rem; */
-  /* right: 110%;
-} */
 
 .movie .tooltipdown::after {
   content: " ";
   position: absolute;
   bottom: 100%;
-  left: 50%;
+  left: 80%;
   margin-left: -0.25rem;
   border-width: 0.5rem;
   border-style: solid;
@@ -402,34 +392,17 @@ p,li,ul,blockquote {
   content: " ";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 80%;
   margin-left: -0.25rem;
   border-width: 0.5rem;
   border-style: solid;
   border-color: white transparent transparent;
 }
 
-.movie .tooltipleft::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  left: 100%; /* To the right of the tooltip */
-  margin-top: -0.25rem;
-  border-width: 0.5rem;
-  border-style: solid;
-  border-color: transparent transparent transparent white;
-}
-
-.content {
-  /* overflow-x: hidden;
-  overflow-y: hidden; */
-}
-
 .main {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-
 /* end tooltip styling */
 
 /* glitch css */
