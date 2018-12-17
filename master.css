@@ -1,6 +1,4 @@
 html {
-  /* background-color: #a67274; */
-  /* background-color: #eab126; */
   background-color: #ffffdd;
   color: black;
 }
@@ -17,18 +15,6 @@ body {
 .sand {
   background-color: #eab126;
 }
-
-/* .palm {
-  background-color: #1b7b34;
-}
-
-.ocean {
-  background-color: #1fb58f;
-}
-
-.cocktail {
-  background-color: #f24c4e;
-} */
 
 .paleyel {
   background-color: #ffffdd;
@@ -48,7 +34,6 @@ h4, h5, h6 {
 
 h5, h5 {
   font-size: 1.6rem;
-  /* color: #9cd08e; */
   font-weight: lighter;
 }
 
@@ -66,32 +51,16 @@ p,li,ul {
   line-height: 2.5rem;
 }
 
-/* .mainLogo {
-  margin: 0;
-  font-size: 11rem;
-  letter-spacing: 2rem;
-  line-height: 11rem;
-} */
-
 .mainSubtitle {
-  /* color: #1fb58f; */
-  /* color: black; */
   color: #ffffdd;
-  /* background-color: #1fb58f; */
   font-size: 2.3rem;
   font-weight: bold;
   margin-top: 0.5rem;
-  /* margin-block-start: 0rem; */
-
-  /* margin-block-end: 0rem; */
 }
 
 .module {
-  /* color: #fce373; */
   font-size: 1.6rem;
   font-weight: bold;
-  /* margin-bottom: 5%;
-  margin-top: 5%; */
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -101,8 +70,6 @@ p,li,ul {
   width: 78%;
   float: right;
   padding: 2.5%;
-  /* margin-top: 2.5%;
-  margin-right: 2.5%; */
 }
 
 .mainMenu {
@@ -110,13 +77,9 @@ p,li,ul {
     position: fixed;
     z-index: 1;
     float: left;
-    /* background: transparent; */
     padding: 2%;
-    /* background-color: #ffffdd; */
     height: 100vh;
     overflow-x: hidden;
-    /* max-height: 85vh; */
-    /* padding: 6px 0; */
 }
 
 .mainMenu a {
@@ -190,21 +153,17 @@ p,li,ul {
 }
 
 .gbtn:hover, .genreHead{
-  /* color: #a385bd; */
   color: #f24c4e
 }
 
 .hbtn:hover, .histHead {
-  /* color: #25a2a6; */
   color: #1fb58f;
 }
 
 footer  {
   font-size: 1.3rem;
-  /* margin-left: 25%; */
-  /* color: #ffffdd; */
   color: black;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: left;
 }
 
@@ -257,12 +216,10 @@ footer  {
 }
 
 #techniques .alabel {
-  /* background-color: rgba(128, 224, 167, 0.5); */
   background-color: rgba(27, 121, 52, 0.5);
 }
 
 #techniques img:hover {
-  /* border: 4px solid #9cd08e; */
   border: 4px solid #1b7b34;
 }
 
@@ -287,8 +244,6 @@ footer  {
 }
 
 hr {
-  /* margin-top: 40px;
-  margin-bottom: 40px; */
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   border-color: black;
@@ -302,24 +257,13 @@ iframe {
   margin-bottom: 1rem;
 }
 
-/* mark{
-  background-color: rgba(45, 41, 38, 0.75);
-  color: white;
-  padding: 10px;
-} */
-
-.content p{
-}
-
 h1 {
   font-size: 3rem;
   letter-spacing: 1rem;
   line-height: 4rem;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
-  /* color: #fce373; */
   color: #eab126;
-  /* color: black; */
   text-transform: lowercase;
 }
 
@@ -344,8 +288,6 @@ img {
   object-fit: cover;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  /* margin-top: 15px;
-  margin-bottom: 15px; */
 }
 
 .diagram {
@@ -356,21 +298,18 @@ img {
 .lists a:link{
     background-color: transparent;
     text-decoration: none;
-    /* color: #9cd08e; */
     color: #ffffdd;
     font-weight: bold;
 }
 .lists a:visited {
     background-color: transparent;
     text-decoration: none;
-    /* color: #9cd08e; */
     color: #ffffdd;
 }
 
 .lists a:active {
     background-color: transparent;
     text-decoration: underline;
-    /* color: #9cd08e; */
     color: #ffffdd;
   }
 .lists h4{
@@ -388,7 +327,7 @@ p,li,ul,blockquote {
 .movie {
   position: relative;
   font-style: italic;
-  border-bottom: 1px dotted white;
+  border-bottom: 2px dotted #eab126;
 }
 
 .movie .minfo {
@@ -397,17 +336,18 @@ p,li,ul,blockquote {
   position: absolute;
   text-align: left;
   color: black;
-  background-color: white;
+  background-color: #ffffdd;
   font-style: normal;
   font-size: 1rem;
   width: 30rem;
+  border: 4px solid black;
 }
 
 .movie .details {
   padding: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  width: 18rem;
+  width: 19rem;
   float: right;
   display: block;
 }
@@ -443,8 +383,10 @@ p,li,ul,blockquote {
   left: 80%;
   margin-left: -0.25rem;
   border-width: 0.5rem;
+  border-width: 12px;
   border-style: solid;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent black transparent;
+
 }
 
 .movie .tooltipup::after {
@@ -454,8 +396,9 @@ p,li,ul,blockquote {
   left: 80%;
   margin-left: -0.25rem;
   border-width: 0.5rem;
+  border-width: 12px;
   border-style: solid;
-  border-color: white transparent transparent;
+  border-color: black transparent transparent;
 }
 
 .main {
@@ -465,7 +408,6 @@ p,li,ul,blockquote {
 /* end tooltip styling */
 
 /* glitch css */
-
 /* DON'T DELETE THIS FOR THE LOVE OF GOD*/
 *{
 	box-sizing: border-box;
@@ -473,13 +415,11 @@ p,li,ul,blockquote {
 
 .glitch{
   color: black;
-  /* font-size:100px; */
   font-size: 12rem;
   height: 11rem;
   font-weight: bold;
   letter-spacing: 1.5rem;
   position:relative;
-  /* width:400px; */
   margin:0 auto;
   font-family: "Josefin Sans", sans-sans-serif;
 }
@@ -641,58 +581,3 @@ p,li,ul,blockquote {
   clip:rect(0,900px,0,0);
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
-
-/* header.header{
-	position: relative;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	transform: translateY(-50%);
-  margin-top: 50px;
-} */
-/* .glitch-window{
-	position: absolute;
-	top: 0;
-	left: -2px;
-	width: 100%;
-	color: #222222;
-	text-shadow: 5px 0 #a385bd, -5px 0 #9cd08e, -5px 0 black;
-	overflow: hidden;
-	animation: crt-me 2500ms infinite linear alternate-reverse;
-} */
-
-/* @keyframes crt-me {
-	 0% {
-        clip: rect(31px, 9999px, 94px, 0)
-    }
-    10% {
-        clip: rect(112px, 9999px, 76px, 0)
-    }
-    20% {
-        clip: rect(85px, 9999px, 77px, 0)
-    }
-    30% {
-        clip: rect(27px, 9999px, 97px, 0)
-    }
-    40% {
-        clip: rect(64px, 9999px, 98px, 0)
-    }
-    50% {
-        clip: rect(61px, 9999px, 85px, 0)
-    }
-    60% {
-        clip: rect(99px, 9999px, 114px, 0)
-    }
-    70% {
-        clip: rect(34px, 9999px, 115px, 0)
-    }
-    80% {
-        clip: rect(98px, 9999px, 129px, 0)
-    }
-    90% {
-        clip: rect(43px, 9999px, 96px, 0)
-    }
-    100% {
-        clip: rect(82px, 9999px, 64px, 0)
-    }
-} */

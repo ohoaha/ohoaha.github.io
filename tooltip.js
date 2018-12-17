@@ -26,12 +26,13 @@ $( document ).ready(function() {
       var response = JSON.parse(client.responseText);
       var x = "<strong>" + response['Title'] + " (" + response['Year'] + ")</strong><br>";
       //INLINE STYLING USED HERE FOR THE TEXT CONTENT OF THE TOOLTIP
-      x += "<span style='font-size:0.75rem; line-height: normal'>" + response['Rated'] + " | " + response['Runtime'] + " | " + response['Genre'] + "<br>";
+      x += "<span style='font-size:0.8rem; line-height: normal'>" + response['Rated'] + " | " + response['Runtime'] + " | " + response['Genre'] + "<br>";
       x += "Director: " + response['Director'] + "<br>";
       x += "Actors: " + response['Actors'] + "<br>";
-      x += "IMDb Rating: " + response['imdbRating'] + " / 10<br></span>";
+      x += "IMDb Rating: " + response['imdbRating'] + " / 10<br>";
+      x += "Awards: " + response['Awards'] + "</span>";
       // The following line adds the plot to the tooltip
-      // x += "<span style='font-size:0.5rem; line-height: normal'>" + response['Plot'] + "</span>";
+      // x += "<span style='font-size:0.8rem; line-height: normal'>" + response['Plot'] + "</span>";
       thiselem.find(".minfo").find(".details").html(x);
       thiselem.find(".minfo").find(".poster").attr("src", response["Poster"]);
       // console.log(response['imdbID']);

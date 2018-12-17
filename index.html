@@ -17,7 +17,7 @@
     <!-- TODO: image overlay on the button images -->
     <div class="main">
       <div class="mainMenu paleyel">
-        <a class="abtn" href="#">about</a><br>
+        <a class="abtnalt" href="#">about</a><br>
         <a class="tbtn" href="techniques.html">techniques</a>
           <button class="dropdown-btn">
             <a class="tbtn">+</a>
@@ -101,7 +101,7 @@
         <br>
         <a class="hbtn" href="history.html">history</a>
         <br>
-        <a class="abtn" href="ref.html">references</a>
+        <a class="abtnalt" href="ref.html">references</a>
 
       </div><!-- .mainMenu -->
 
@@ -139,7 +139,9 @@
         </div><!-- .module -->
         <hr>
         <div class="module">
-          Discover how films evolved from Sallie Gardner at a Gallop to Avatar with our timeline of cinematic history
+          Discover how films evolved from
+          <span class="movie">Sallie Gardner at a Gallop (1878)<span class="minfo"><img class="poster"><span class="details"></span></span></span> to
+          <br><span class="movie">Avatar (2009)<span class="minfo"><img class="poster"><span class="details"></span></span></span> with our timeline of cinematic history
           <a class="bmod" id="history" href="history.html">
             <img src="https://i.imgur.com/idBTjai.jpg" alt="History button picture">
             <div class="alabel">
@@ -152,9 +154,8 @@
         </footer>
       </div><!-- .content -->
     </div><!-- .main -->
-
-
     <script src="nav.js"></script>
     <script src="script.js"></script>
+    <script src="tooltip.js" charset="utf-8"></script>
   </body>
 </html>
