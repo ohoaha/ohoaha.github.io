@@ -581,3 +581,32 @@ p,li,ul,blockquote {
   clip:rect(0,900px,0,0);
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
+
+
+/* start scroll to top  button style */
+#scrolltotop {
+    width: 44px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 5;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ffffdd;
+    color: #000000;
+    border: 4px solid #000000;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+#scrolltotop:hover {
+    background-color: #ffffdd;
+    color: #000000;
+    border: 4px solid #000000;
+
+    opacity: 1;
+}
+/* end scroll to top button style */
