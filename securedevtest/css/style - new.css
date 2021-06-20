@@ -1,0 +1,179 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+.header {
+    height: 6rem;
+    padding: 2rem 15rem 1.5rem;
+
+    background-color: #1b03a3;
+
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.35rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a:visited {
+    text-decoration: none;
+}
+
+.websiteTitle {
+    float: left;
+}
+
+.websiteTitle a {
+    color: #c7ff0c;
+}
+
+.websiteTitle a:visited {
+    color: #c7ff0c;
+}
+
+.headerLinks {
+    float: right;
+    margin-top: 1.25rem;
+}
+
+.headerLinks a {
+    float: right;
+
+    font-size: 1.25rem;
+    color: #c7ff0c;
+
+    border: 0.1rem solid #c7ff0c;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0rem 0.75rem 0rem;
+}
+
+.headerLinks a:visited {
+    color: #c7ff0c;
+}
+
+.headerLinks a:hover {
+    background-color: #c7ff0c;
+    color: #1b03a3;
+}
+
+/* Main body */
+
+.mainBody {
+    padding: 2rem 15rem 1.5rem;
+}
+
+.mainBody p {
+    margin: 1rem 0rem 1rem;
+}
+
+.mainBody h1 {
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 2.5rem;
+    color: #1b03a3;
+}
+
+.mainBody h2 {
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 2.5rem;
+    color:#1b03a3;
+}
+
+.mainBody ul {
+    list-style-position: inside;
+    padding-left: 3rem;
+}
+
+.mainBody ul li {
+    margin-top: 1rem;
+
+}
+
+.linkButton button {
+    width:100%;
+
+    font-family: 'Varela Round', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    color: #c7ff0c;
+
+    border: 0.1rem solid #ffffff;
+    border-radius: 0.3rem;
+    padding: 4rem 3rem 4rem;
+
+    margin: 1.25rem 0rem 0rem;
+
+    background-position: center; 
+    background-size: cover;
+}
+
+.linkButton button:hover {
+    cursor: pointer;
+}
+
+
+#sdlcLinkButton {
+    background-image:
+        linear-gradient(to left, rgba(72, 55, 165, 0.05), rgba(72, 55, 165, 0.55), rgb(28, 3, 165, 0.80)),
+        url('../images/arpad-czapp-H424WdcQN4Y-unsplash.jpg');
+}
+
+#sdlcLinkButton:hover{
+    background-image:
+        linear-gradient(to left, rgba(72, 55, 165, 0.35), rgba(72, 55, 165, 0.8), rgb(28, 3, 165, 1)),
+        url('../images/arpad-czapp-H424WdcQN4Y-unsplash.jpg');
+
+}
+
+#agileLinkButton {
+    background-image:
+        linear-gradient(to left, rgba(72, 55, 165, 0.05), rgba(72, 55, 165, 0.55), rgb(28, 3, 165, 0.80)),
+        url('../images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg');
+}
+
+#agileLinkButton:hover{
+    background-image:
+        linear-gradient(to left, rgba(27, 3, 165, 0.35), rgba(72, 55, 165, 0.8), rgb(28, 3, 165, 1)),
+        url('../images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg');
+
+}
+
+#devopsLinkButton {
+    background-image:
+        linear-gradient(to left, rgba(72, 55, 165, 0.05), rgba(72, 55, 165, 0.55), rgb(28, 3, 165, 0.80)),
+        url('../images/christina-wocintechchat-com-bPVM4nOy0Rg-unsplash.jpg');
+}
+
+#devopsLinkButton:hover {
+    background-image:
+        linear-gradient(to left, rgba(27, 3, 165, 0.35), rgba(72, 55, 165, 0.8), rgb(28, 3, 165, 1)),
+        url('../images/christina-wocintechchat-com-bPVM4nOy0Rg-unsplash.jpg');
+
+}
+
+
+/* Footer */
+
+.footer {
+    /* height: 5rem; */
+    padding: 2rem 15rem 2rem;
+
+    background-color: #1b03a3;
+    color: #c7ff0c;
+}
+
+.footer a {
+    color: #c7ff0c;
+}
+
+.footer a:visited {
+    color: #c7ff0c;
+}
