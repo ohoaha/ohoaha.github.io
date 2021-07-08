@@ -106,7 +106,7 @@ body {
     color: #c7ff0c;
 
     border: 0.1rem solid #ffffff;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     padding: 4rem 3rem 4rem;
 
     margin: 1.25rem 0rem 0rem;
@@ -158,6 +158,57 @@ body {
         url('../images/christina-wocintechchat-com-bPVM4nOy0Rg-unsplash.jpg');
 
 }
+
+
+
+/* Bottom navigation buttons (previous/next) */
+.bottomNav {
+    margin-bottom: 3rem;  
+    height: 6rem;  
+}
+
+.bottomNav button {
+    float: left;
+    height: 6rem;
+    width: 50%;
+
+    padding: 0rem 1rem;
+
+    background-color: white;
+
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+
+    border: 0.1rem solid #1b03a3;
+
+    width: 200 rem;
+    color: #1b03a3;
+}
+
+.bottomNav a:visited {
+    color: #c7ff0c;
+}
+
+.bottomNav button:hover {
+    background-color: #c7ff0c;
+    color: #1b03a3;
+}
+
+#bottomPrev button {
+    text-align: left;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+#bottomNext button {
+    text-align: right;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+#pageTitle {
+    font-size: 1rem;
+    /* line-height: 1rem; */
+}
+
 
 
 /* Footer */
