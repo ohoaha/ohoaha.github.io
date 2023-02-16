@@ -28,7 +28,7 @@ twitter_username: ewzuhnaem
 github_username:  ohoaha
 
 # Build settings
-theme: minima
+# theme: minima
 remote-theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
