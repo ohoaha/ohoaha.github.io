@@ -4,4 +4,8 @@
 
 layout: home
 ---
-ello
+
+# Hi there!
+
+Welcome to my homepage!
+
